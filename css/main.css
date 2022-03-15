@@ -96,7 +96,7 @@ textarea {
    ========================================================================== */
 
 html {
-  background-color: #fff;
+  background-color: rgb(10, 10, 10);
   height: 100%;
   width: 100%;
 }
@@ -111,16 +111,14 @@ body {
 
 header,
 footer {
-  background-color: #222;
   width: 100%;
   height: 10vh;
   display: flex;
 }
 
 main {
-  background-color: #ccc;
-  height: 40vh;
-
+  height: 38vh;
+  border-bottom: 2px solid white;
 }
 
 header,
@@ -129,7 +127,8 @@ main {
     width:100%; 
     display: flex;
     justify-content: center;
-    align-items: center;}
+    align-items: center;
+}
 
 .flex-container{
   width: 100%;
@@ -138,6 +137,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-bottom: 2px solid white;
 }
 
 .wrapper{
@@ -146,22 +146,27 @@ main {
     display:flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding: 1.6vh;
 }
 
 
 .flex-items {
   width: 30%;
-  height: 40vh;
+  height: auto;
   display: flex;
   justify-content: center;
-  align-content: center;
-  margin: 0 3vh;
-  background-color: #f16059;
+  align-items: flex-start;
+  margin: 1vh 3vh;
+  padding: 1.75vw;
   color: #fff;
   line-height: 1.5em;
   font-size: 1.6em;
-  /*why is flex-container not extending 100% in width??-Sasha*/
+}
+
+#div-2,
+#div-3{
+    border-left: 0.7px solid white;
 }
 
 /* ==========================================================================
